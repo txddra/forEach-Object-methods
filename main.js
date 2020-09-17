@@ -22,10 +22,10 @@ const obj = {
 };
 /*loop though */
 
-Object.entries(obj).forEach(user=>{
+Object.entries(obj).forEach(user => {
   console.log(`${user[0]} is called ${user[1].name} and is ${user[1].age}`);
 });
-//this will give me the 
+
 
 // console.log(x)
 // // for(const key)
@@ -33,7 +33,7 @@ Object.entries(obj).forEach(user=>{
 // let userAge = Object.values(obj)
 // let together = Object.entries(obj)
 // user.forEach(element => {
-  
+
 // });
 
 // for(const[user, name] of Object.values(obj)){
@@ -63,7 +63,7 @@ console.log(Object.keys(documents).sort())
 
 console.log(Object.values(documents));
 //will make one list of all the files/values
- const combinedList = documents.taxes.concat(documents.records, documents.miscellaneous,documents.Clubhouse)
+const combinedList = documents.taxes.concat(documents.records, documents.miscellaneous, documents.Clubhouse)
 console.log(combinedList)
 
 
@@ -82,3 +82,30 @@ const book2 = {
   author: 'John Doe',
   year: '2019',
 };
+
+
+//values and keys in a variable
+let firstBook = Object.entries(book1);
+let copy = Object.entries(book2);
+let bookVal1 = Object.values(book1);
+let bookVal2 = Object.values(book2);
+
+function checker(fGiven,sGiven){
+  //loop through the two books
+  if(Object.entries(fGiven)=== Object.entries(sGiven)){
+return 'Same book'
+  }
+  return 'different book'
+}
+
+// console.log(copy, firstBook)
+console.log(checker(firstBook,copy))
+// function checker(book1, book2) {
+// if(Object.values(book1) === Object.values(book2)){
+//  console.log( 'These are the same book')
+
+
+// }
+// console.log( 'these are different')
+// }
+// checker(book1, book2)
