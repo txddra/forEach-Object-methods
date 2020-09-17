@@ -93,9 +93,9 @@ let bookVal2 = Object.values(book2);
 function checker(fGiven,sGiven){
   //loop through the two books
   if(Object.entries(fGiven)=== Object.entries(sGiven)){
-return 'Same book'
+console.log( 'Same book')
   }
-  return 'different book'
+  console.log( 'different book')
 }
 
 // console.log(copy, firstBook)
